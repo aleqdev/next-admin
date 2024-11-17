@@ -254,6 +254,7 @@ const Form = ({
                 type: "success",
                 message: t("form.delete.succeed"),
               }),
+              u: Date.now().toString()
             },
           });
         }
@@ -269,6 +270,7 @@ const Form = ({
                 type: "success",
                 message: t("form.create.succeed"),
               }),
+              u: Date.now().toString()
             },
           });
         }
@@ -291,6 +293,7 @@ const Form = ({
                   type: "success",
                   message: t("form.update.succeed"),
                 }),
+                u: Date.now().toString()
               },
             });
           }
