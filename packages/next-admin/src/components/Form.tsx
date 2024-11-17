@@ -395,7 +395,7 @@ const Form = ({
       options,
       onChangeOverride,
       uiSchema,
-      readonly,
+      readOnly,
       formContext,
       autofocus,
       rawErrors,
@@ -419,7 +419,7 @@ const Form = ({
         return cloneElement(customInput, {
           value: props.value,
           onChange: onChangeOverride || onTextChange,
-          readonly,
+          readOnly: readOnly,
           rawErrors,
           name: props.name,
           required: props.required,
@@ -432,7 +432,7 @@ const Form = ({
         return (
           <JsonField
             onChange={onChangeOverride || onTextChange}
-            readonly={readonly}
+            readOnly={readOnly}
             rawErrors={rawErrors}
             {...props}
           />
@@ -442,7 +442,7 @@ const Form = ({
         return (
           <RichTextField
             onChange={onChangeOverride || onTextChange}
-            readonly={readonly}
+            readOnly={readOnly}
             rawErrors={rawErrors}
             name={props.name}
             value={props.value}
