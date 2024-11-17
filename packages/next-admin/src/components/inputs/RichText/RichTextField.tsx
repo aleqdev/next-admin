@@ -17,7 +17,7 @@ import {
 
 type RichTextFieldProps = {
   onChange: ChangeEventHandler<HTMLInputElement>;
-  readonly?: boolean;
+  readOnly?: boolean;
   rawErrors?: string[];
   name: string;
   value: string;
