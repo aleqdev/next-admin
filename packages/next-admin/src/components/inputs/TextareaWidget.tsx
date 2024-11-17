@@ -24,7 +24,7 @@ const TextareaWidget = <
   value,
   required,
   disabled,
-  readonly,
+  readOnly,
   autofocus = false,
   onChange,
   onBlur,
@@ -65,7 +65,7 @@ const TextareaWidget = <
       placeholder={placeholder}
       required={required}
       disabled={disabled}
-      readOnly={readonly}
+      readOnly={readOnly}
       autoFocus={autofocus}
       rows={options.rows}
       onBlur={handleBlur}

@@ -5,6 +5,10 @@ import { twMerge } from "tailwind-merge";
 type Props = ComponentProps<"input">;
 
 const BaseInput = ({ className, ...props }: Props) => {
+  if (props.rawErrors !== undefined) {
+    props.rawErrors = undefined
+  }
+
   return (
     <input
       className={twMerge(
